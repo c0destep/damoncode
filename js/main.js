@@ -2,6 +2,16 @@ window.onload = () => {
     verifyTheme();
 }
 
+window.onscroll = () => {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("backToTop").classList.toggle('inline-flex', true);
+        document.getElementById("backToTop").classList.toggle('hidden', false);
+    } else {
+        document.getElementById("backToTop").classList.toggle('inline-flex', false);
+        document.getElementById("backToTop").classList.toggle('hidden', true);
+    }
+}
+
 const switchMode = (event) => {
     switch (event.value) {
         case "auto":
@@ -20,6 +30,16 @@ const switchMode = (event) => {
     verifyTheme();
 };
 
+/* document.querySelectorAll('a[href^="#"]').forEach(el => {
+    el.addEventListener('click', function (ev) {
+        ev.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+}); */
+
 function toggleMenu(flag) {
     let value = document.getElementById("menu");
     if (flag) {
@@ -35,8 +55,4 @@ function verifyTheme() {
     } else {
         document.documentElement.classList.remove('dark');
     }
-}
-
-function backButtomTop() {
-    document.documentElement.scrollTop = 0;
 }

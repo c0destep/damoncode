@@ -17,6 +17,7 @@
     <link href="icon.png" rel="apple-touch-icon">
     <!-- Place favicon.ico in the root directory -->
 
+    <link href="css/vendor/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./css/output.css" rel="stylesheet">
 
     <meta content="#4338ca" name="theme-color">
@@ -36,7 +37,7 @@
     </script>
 </head>
 
-<body>
+<body id="top">
 
     <nav class="sticky top-0 w-full border-b dark:border-b-gray-800 bg-gray-50 dark:bg-gray-900 z-10">
         <div class="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
@@ -127,7 +128,8 @@
             </div>
         </div>
 
-        <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 target:scroll-mt-16" id="about">
+        <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 target:scroll-mt-16"
+            id="about">
             <div class="flex flex-col lg:flex-row justify-between gap-8">
                 <div class="w-full lg:w-5/12 flex flex-col justify-center">
                     <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-gray-200 pb-4">
@@ -333,9 +335,11 @@
                                     Diretor de technologia
                                 </p>
                                 <p class="text-center text-gray-600 dark:text-gray-500 text-base pt-3 font-normal">
-                                    CTO e co-fundador da DamonCode, nas horas vagas aproveita o seu tempo livre para fazer o que ama, 
+                                    CTO e co-fundador da DamonCode, nas horas vagas aproveita o seu tempo livre para
+                                    fazer o que ama,
                                     desenvolver usando a linguagem java.
-                                    administra e gerencia sua equipe de TI na DamonCode, realizou vários projetos com sua equipe e solos. Responsavel por toda a infraestrutura da DamonCode  
+                                    administra e gerencia sua equipe de TI na DamonCode, realizou vários projetos com
+                                    sua equipe e solos. Responsavel por toda a infraestrutura da DamonCode
                                 </p>
                                 <div class="w-full flex justify-center pt-5 pb-5">
                                     <a class="mx-5" href="https://github.com/BrendoMSilva">
@@ -676,10 +680,11 @@
             </div>
         </footer>
     </div>
-    <div class="fixed bottom-4 right-8">
-        <button onclick="backButtomTop();" id="btn" class="bg-indigo-700 rounded-lg p-4">
-            <svg class="w-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
-        </button>
+    <div class="fixed bottom-4 right-6 md:bottom-6 md:right-8">
+        <a id="backToTop" href="#top"
+            class="w-12 h-12 inline-flex justify-center items-center bg-indigo-700 hover:bg-indigo-600 text-gray-50 rounded-full">
+            <i class="fa-solid fa-angle-up text-2xl"></i>
+        </a>
     </div>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>

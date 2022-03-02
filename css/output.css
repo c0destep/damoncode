@@ -712,12 +712,8 @@ select {
   right: 0px;
 }
 
-.right-2 {
-  right: 0.5rem;
-}
-
-.right-4 {
-  right: 1rem;
+.bottom-8 {
+  bottom: 2rem;
 }
 
 .right-8 {
@@ -726,6 +722,10 @@ select {
 
 .bottom-4 {
   bottom: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
 }
 
 .z-10 {
@@ -738,10 +738,6 @@ select {
 
 .z-20 {
   z-index: 20;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .m-auto {
@@ -838,6 +834,10 @@ select {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -914,28 +914,8 @@ select {
   width: 9rem;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
-}
-
-.scroll-mt-1 {
-  scroll-margin-top: 0.25rem;
 }
 
 .appearance-none {
@@ -1079,34 +1059,6 @@ select {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
-}
-
-.fill-white {
-  fill: #fff;
-}
-
-.stroke-white {
-  stroke: #fff;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1122,26 +1074,6 @@ select {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-16 {
-  padding: 4rem;
-}
-
-.p-8 {
-  padding: 2rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .py-5 {
@@ -1252,10 +1184,6 @@ select {
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-3xl {
@@ -1402,6 +1330,11 @@ select {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-gray-50 {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1435,28 +1368,12 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.target\:scroll-mt-1:target {
-  scroll-margin-top: 0.25rem;
-}
-
-.target\:scroll-mt-5:target {
-  scroll-margin-top: 1.25rem;
-}
-
 .target\:scroll-mt-16:target {
   scroll-margin-top: 4rem;
 }
 
-.target\:scroll-mt-14:target {
-  scroll-margin-top: 3.5rem;
-}
-
 .target\:scroll-mt-20:target {
   scroll-margin-top: 5rem;
-}
-
-.target\:scroll-smooth:target {
-  scroll-behavior: smooth;
 }
 
 .hover\:border-indigo-600:hover {
@@ -1685,6 +1602,26 @@ select {
 @media (min-width: 768px) {
   .md\:relative {
     position: relative;
+  }
+
+  .md\:bottom-12 {
+    bottom: 3rem;
+  }
+
+  .md\:right-12 {
+    right: 3rem;
+  }
+
+  .md\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .md\:bottom-6 {
+    bottom: 1.5rem;
+  }
+
+  .md\:right-8 {
+    right: 2rem;
   }
 
   .md\:ml-5 {
