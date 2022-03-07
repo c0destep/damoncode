@@ -4,13 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>Bem-vindo | DamonCode</title>
-    <meta content="DamonCode is a portfolio site by Codestep is Damon." name="description">
+    <meta content="code, damon, portfolio, dev" name="keywords"/>
+    <meta content="DamonCode is a portfolio site by Codestep is Damon." name="description"/>
+    <meta content="Portfolio" name="subject">
+    <meta content="Codingstep" name="copyright">
+    <meta content="pt-br" name="language">
+    <meta content="index,follow" name="robots"/>
+    <meta content="Codestep, codestep@codingstep.com.br" name="author">
+    <meta content="https://www.damoncode.com" name="url">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <meta content="DamonCode" property="og:title">
     <meta content="website" property="og:type">
     <meta content="https://damoncode.com" property="og:url">
     <meta content="tile.png" property="og:image">
+    <meta content="Damoncode" name="og:site_name"/>
+    <meta content="DamonCode is a portfolio site by Codestep is Damon." name="og:description"/>
 
     <link href="site.webmanifest" rel="manifest">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -45,7 +54,8 @@
             <img alt="logo" class="w-12 md:w-16" src="icon.png"/>
         </div>
         <div>
-            <button class="sm:block md:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+            <button
+                    class="sm:block md:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
                     onclick="toggleMenu(true)">
                 <svg aria-haspopup="true" aria-label="open main menu"
                      class="md:hidden icon icon-tabler icon-tabler-menu" fill="none" height="24"
@@ -57,7 +67,8 @@
                 </svg>
             </button>
             <div class="md:block lg:block hidden" id="menu">
-                <button class="block md:hidden lg:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6"
+                <button
+                        class="block md:hidden lg:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6"
                         onclick="toggleMenu(false)">
                     <svg aria-label="close main menu" fill="none" height="24" stroke="currentColor"
                          stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
@@ -67,26 +78,33 @@
                         <line x1="6" x2="18" y1="6" y2="18"/>
                     </svg>
                 </button>
-                <ul class="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white dark:bg-gray-900 md:bg-transparent z-20">
-                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
+                <ul
+                        class="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white dark:bg-gray-900 md:bg-transparent z-20">
+                    <li
+                            class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
                         <a href="#about">Sobre Nós</a>
                     </li>
-                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                    <li
+                            class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                         <a href="#team">Equipe</a>
                     </li>
-                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                    <li
+                            class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                         <a href="#projects">Projetos</a>
                     </li>
-                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                    <li
+                            class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                         <a href="#skills">Habilidades</a>
                     </li>
-                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                    <li
+                            class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                         <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <button class="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-800/[.5] rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
+        <button
+                class="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-800/[.5] rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
             Entrar
         </button>
     </div>
@@ -95,21 +113,25 @@
 <div class="bg-gray-100 dark:bg-gray-900">
     <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
         <div class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 dark:text-gray-200 font-black leading-7 md:leading-10">
+            <h1
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 dark:text-gray-200 font-black leading-7 md:leading-10">
                 A liberdade para criar os
                 <span class="text-indigo-700">Websites</span>
                 que você deseja
             </h1>
-            <p class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 dark:text-gray-500 font-normal text-center text-sm sm:text-lg">
+            <p
+                    class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 dark:text-gray-500 font-normal text-center text-sm sm:text-lg">
                 Um site profissional para você jogar na cara daquele adversário. Um site com tudo o que tem
                 direito. Sempre pensando na experiência do usuário.
             </p>
         </div>
         <div class="flex justify-center items-center">
-            <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4 text-sm">
+            <button
+                    class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4 text-sm">
                 Conhecer
             </button>
-            <button class="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-transparent transition duration-150 ease-in-out hover:border-indigo-600 lg:text-xl lg:font-bold  hover:text-indigo-600 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">
+            <button
+                    class="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-transparent transition duration-150 ease-in-out hover:border-indigo-600 lg:text-xl lg:font-bold  hover:text-indigo-600 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">
                 Demostração
             </button>
         </div>
@@ -125,7 +147,8 @@
                 <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-500">
                     As experiências acumuladas demonstram que a alta necessidade de integridade pode nos levar a
                     considerar a reestruturação do impacto de uma parada total. Não obstante, o crescente aumento da
-                    densidade de “bytes” das mídias assume importantes níveis de uptime da (gerenciamento) de risco. É
+                    densidade de “bytes” das mídias assume importantes níveis de uptime da (gerenciamento) de risco.
+                    É
                     importante
                     questionar o quanto a necessidade de cumprimento dos SLAs previamente acordados ainda não
                     demonstrou
@@ -202,27 +225,33 @@
             </p>
         </div>
         <div class="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
                 <img alt="Adidas" class="focus:outline-none" role="img"
                      src="https://cdn.tuk.dev/assets/adidas-dark.png" tabindex="0"/>
             </div>
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
                 <img alt="Chanel" class="focus:outline-none" role="img"
                      src="https://cdn.tuk.dev/assets/channel-dark.png" tabindex="0"/>
             </div>
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 pt-4 items-center">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 pt-4 items-center">
                 <img alt="Nike" class="focus:outline-none" role="img" src="https://cdn.tuk.dev/assets/nike-dark.png"
                      tabindex="0"/>
             </div>
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center lg:border-b xl:border-b lg:border-l xl:border-l border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center lg:border-b xl:border-b lg:border-l xl:border-l border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
                 <img alt="Toyota" class="focus:outline-none" role="img"
                      src="https://cdn.tuk.dev/assets/toyota-dark.png" tabindex="0"/>
             </div>
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pt-10 items-center">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pt-10 items-center">
                 <img alt="GS1" class="focus:outline-none" role="img" src="https://cdn.tuk.dev/assets/gs1-dark.png"
                      tabindex="0"/>
             </div>
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pt-10 items-center">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pt-10 items-center">
                 <img alt="BlackBerry" class="focus:outline-none" role="img"
                      src="https://cdn.tuk.dev/assets/berry-dark.png" tabindex="0"/>
             </div>
@@ -230,7 +259,8 @@
                 <img alt="Mini" class="focus:outline-none" role="img" src="https://cdn.tuk.dev/assets/min-dark.png"
                      tabindex="0"/>
             </div>
-            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-l lg:border-l border-gray-200 dark:border-gray-700 xl:pt-10 lg:pt-10 md:pt-2 pt-16">
+            <div
+                    class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-l lg:border-l border-gray-200 dark:border-gray-700 xl:pt-10 lg:pt-10 md:pt-2 pt-16">
                 <img alt="Honda" class="focus:outline-none" role="img"
                      src="https://cdn.tuk.dev/assets/honda-dark.png" tabindex="0"/>
             </div>
@@ -242,14 +272,15 @@
             <p class="text-gray-500 text-lg text-center font-normal pb-3">
                 Equipe de Desenvolvimento
             </p>
-            <h1 class="xl:text-4xl text-3xl text-center text-gray-800 dark:text-gray-200 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
+            <h1
+                    class="xl:text-4xl text-3xl text-center text-gray-800 dark:text-gray-200 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
                 As pessoas talentosas nos bastidores dos projetos
             </h1>
         </div>
     </div>
     <div class="w-full px-10 pt-10">
         <div class="container mx-auto">
-            <div aria-label="Behind the scenes People "
+            <div aria-label="Time de Devs"
                  class="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around"
                  role="list">
                 <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
@@ -412,7 +443,8 @@
                     <div class="w-20 h-20 relative mr-5">
                         <div class="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1">
                         </div>
-                        <div class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                        <div
+                                class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
                             <img alt="drawer"
                                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG1.svg">
                         </div>
@@ -432,7 +464,8 @@
                 <div aria-label="card 2" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
                     <div class="w-20 h-20 relative mr-5">
                         <div class="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1"></div>
-                        <div class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                        <div
+                                class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
                             <img alt="check"
                                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG2.svg">
                         </div>
@@ -451,7 +484,8 @@
                 <div aria-label="card 3" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
                     <div class="w-20 h-20 relative mr-5">
                         <div class="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1"></div>
-                        <div class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                        <div
+                                class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
                             <img alt="html tag"
                                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG3.svg">
                         </div>
@@ -472,7 +506,8 @@
                 <div aria-label="card 4" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
                     <div class="w-20 h-20 relative mr-5">
                         <div class="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1"></div>
-                        <div class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                        <div
+                                class="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
                             <img alt="monitor"
                                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG4.svg">
                         </div>
@@ -494,8 +529,10 @@
         </div>
     </div>
 
-    <div class="max-w-8xl mx-auto container pt-16 flex items-center justify-center">
-        <form action="http://api.damoncode.com/contact" class="py-12 lg:px-28 px-8" id="formSendContact" method="post">
+    <div class="max-w-8xl mx-auto container pt-16 flex items-center justify-center target:scroll-mt-16"
+         id="contact">
+        <form action="https://api.codingstep.com.br/contact" class="py-12 lg:px-28 px-8" id="formSendContact"
+              method="post">
             <p class="hidden text-xl font-medium text-center text-green-300" id="hasSend"></p>
             <p class="hidden text-xl font-medium text-center text-red-300" id="hasNotSend"></p>
             <p class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-800 dark:text-gray-200">
@@ -505,24 +542,20 @@
                 <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
                     <input aria-label="Por favor, insira o nome"
                            class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                           id="name"
-                           placeholder=""
-                           tabindex="0"
-                           type="text"/>
-                    <label class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                           for="name">
+                           id="name" placeholder="" tabindex="0" type="text"/>
+                    <label
+                            class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="name">
                         Nome completo
                     </label>
                 </div>
                 <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
                     <input aria-label="Por favor, insira o e-mail"
                            class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                           id="email"
-                           placeholder=""
-                           tabindex="0"
-                           type="email"/>
-                    <label class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                           for="email">
+                           id="email" placeholder="" tabindex="0" type="email"/>
+                    <label
+                            class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="email">
                         Endereço de E-mail
                     </label>
                 </div>
@@ -531,50 +564,45 @@
                 <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
                     <input aria-label="Por favor, insira o nome da empresa"
                            class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                           id="company"
-                           placeholder=""
-                           tabindex="0"
-                           type="text"/>
-                    <label class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                           for="company">
+                           id="company" placeholder="" tabindex="0" type="text"/>
+                    <label
+                            class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="company">
                         Nome da Empresa
                     </label>
                 </div>
                 <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
                     <input aria-label="Por favor, insira o nome do país"
                            class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                           id="country"
-                           placeholder=""
-                           tabindex="0"
-                           type="text"/>
-                    <label class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                           for="country">
+                           id="country" placeholder="" tabindex="0" type="text"/>
+                    <label
+                            class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="country">
                         País
                     </label>
                 </div>
             </div>
             <div>
-                <div class="relative z-0 mb-6 w-full group w-full flex flex-col mt-8">
-                    <textarea aria-label="Descreva sua mensagem"
-                              class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                              id="message"
-                              placeholder=""
-                              role="textbox"
-                              tabindex="0"></textarea>
-                    <label class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                           for="message">
+                <div class="relative z-0 mb-6 w-full group flex flex-col mt-8">
+                        <textarea aria-label="Descreva sua mensagem"
+                                  class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                  id="message" placeholder="" role="textbox" tabindex="0"></textarea>
+                    <label
+                            class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="message">
                         Mensagem
                     </label>
                 </div>
             </div>
             <p class="text-xs leading-3 text-gray-600 mt-4">
-                Ao clicar em enviar, você concorda com nossos termos de serviço, política de privacidade e como usamos
+                Ao clicar em enviar, você concorda com nossos termos de serviço, política de privacidade e como
+                usamos
                 os dados conforme declarado.
             </p>
             <div class="flex items-center justify-center w-full">
-                <button class="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
-                        id="buttonSendContact"
-                        type="button">
+                <button
+                        class="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
+                        id="buttonSendContact" type="button">
                     Enviar
                 </button>
             </div>
@@ -582,13 +610,14 @@
     </div>
 
     <div class="p-6 container md:w-2/3 xl:w-auto mx-auto flex flex-col xl:items-stretch justify-between xl:flex-row target:scroll-mt-20"
-         id="contact">
+         id="newsletter">
         <div class="xl:w-1/2 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
             <img alt="Envelope with a newsletter" class="h-full xl:w-full lg:w-1/2 w-full" role="img"
                  src="https://cdn.tuk.dev/assets/components/26May-update/newsletter-1.png"/>
         </div>
         <div class="w-full xl:w-1/2 xl:pl-40 xl:py-28">
-            <h1 class="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 dark:text-gray-200 mb-4 text-center xl:text-left md:mt-0 mt-4">
+            <h1
+                    class="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 dark:text-gray-200 mb-4 text-center xl:text-left md:mt-0 mt-4">
                 Inscreva-se
             </h1>
             <p class="text-base leading-normal text-gray-600 dark:text-gray-500 text-center xl:text-left">
@@ -596,13 +625,18 @@
                 simplesmente
                 quer ficar por dentro de tudo assine.
             </p>
-            <div class="flex items-stretch mt-12">
-                <input class="bg-gray-200 dark:bg-gray-800 rounded-lg rounded-r-none text-base leading-none text-gray-800 dark:text-gray-200 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500"
-                       placeholder="Seu E-mail" type="email"/>
-                <button class="w-32 rounded-l-none hover:bg-indigo-600 bg-indigo-700 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">
-                    inscrever
-                </button>
-            </div>
+            <form action="https://api.codingstep.com.br/newsletter" method="post">
+                <div class="flex items-stretch mt-12">
+                    <input
+                            class="bg-gray-200 dark:bg-gray-800 rounded-lg rounded-r-none text-base leading-none text-gray-800 dark:text-gray-200 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500"
+                            placeholder="Seu E-mail" type="email"/>
+                    <button
+                            class="w-32 rounded-l-none hover:bg-indigo-600 bg-indigo-700 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700"
+                            type="button">
+                        inscrever
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -691,7 +725,8 @@
                             <div class="w-full lg:w-1/2 px-6 flex flex-col justify-between">
                                 <div class="flex items-center mb-6">
                                     <a aria-label="Github" href="javascript:void(0)">
-                                        <div class="text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand">
+                                        <div
+                                                class="text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand">
                                             <img alt="Github" class="dark:hidden"
                                                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg1.svg">
                                             <img alt="Github" class="dark:block hidden"
@@ -739,10 +774,10 @@
         </div>
     </footer>
 </div>
+
 <div class="fixed bottom-4 right-6 md:bottom-6 md:right-8">
     <a class="w-12 h-12 inline-flex justify-center items-center bg-indigo-700 hover:bg-indigo-600 text-gray-50 rounded-full"
-       href="#top"
-       id="backToTop">
+       href="#top" id="backToTop">
         <i class="fa-solid fa-angle-up text-2xl"></i>
     </a>
 </div>

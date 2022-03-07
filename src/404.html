@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js antialiased scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Não Encontrado | DamonCode</title>
+    <meta content="code, damon, portfolio, dev" name="keywords"/>
+    <meta content="DamonCode is a portfolio site by Codestep is Damon." name="description"/>
+    <meta content="Portfolio" name="subject">
+    <meta content="Codingstep" name="copyright">
+    <meta content="pt-br" name="language">
+    <meta content="index,follow" name="robots"/>
+    <meta content="Codestep, codestep@codingstep.com.br" name="author">
+    <meta content="https://www.damoncode.com" name="url">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <meta content="404 Error" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="https://damoncode.com" property="og:url">
+    <meta content="tile.png" property="og:image">
+    <meta content="Damoncode" name="og:site_name"/>
+    <meta content="DamonCode is a portfolio site by Codestep is Damon." name="og:description"/>
+
+    <link href="../site.webmanifest" rel="manifest">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../icon.png" rel="apple-touch-icon">
+
+    <link href="../css/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="../css/output.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+    <meta content="#4338ca" name="theme-color">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFRGDVPDYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-LFRGDVPDYG');
+    </script>
+</head>
+
+<body id="top">
+
+<nav class="sticky top-0 w-full border-b dark:border-b-gray-800 bg-gray-50 dark:bg-gray-900 z-10">
+    <div class="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
+        <div aria-label="Damoncode" role="img">
+            <img alt="logo" class="w-12 md:w-16" src="../icon.png"/>
+        </div>
+        <div>
+            <button class="sm:block md:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                    onclick="toggleMenu(true)">
+                <svg aria-haspopup="true" aria-label="open main menu"
+                     class="md:hidden icon icon-tabler icon-tabler-menu" fill="none" height="24"
+                     stroke="currentColor" stroke-linecap="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" stroke="none"></path>
+                    <line x1="4" x2="20" y1="8" y2="8"></line>
+                    <line x1="4" x2="20" y1="16" y2="16"></line>
+                </svg>
+            </button>
+            <div class="md:block lg:block hidden" id="menu">
+                <button class="block md:hidden lg:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6"
+                        onclick="toggleMenu(false)">
+                    <svg aria-label="close main menu" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                         width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" stroke="none"/>
+                        <line x1="18" x2="6" y1="6" y2="18"/>
+                        <line x1="6" x2="18" y1="6" y2="18"/>
+                    </svg>
+                </button>
+                <ul class="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white dark:bg-gray-900 md:bg-transparent z-20">
+                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
+                        <a href="index.html#about">Sobre Nós</a>
+                    </li>
+                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a href="index.html#team">Equipe</a>
+                    </li>
+                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a href="index.html#projects">Projetos</a>
+                    </li>
+                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a href="index.html#skills">Habilidades</a>
+                    </li>
+                    <li class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a href="index.html#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-800/[.5] rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
+            Entrar
+        </button>
+    </div>
+</nav>
+
+<div class="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col justify-center items-center">
+    <h1 class="text-7xl font-bold text-gray-700 dark:text-gray-300">
+        404
+    </h1>
+    <p class="text-base font-normal text-gray-700 dark:text-gray-300">
+        Página não encontrada!
+    </p>
+</div>
+
+<div class="fixed bottom-4 right-6 md:bottom-6 md:right-8">
+    <a class="w-12 h-12 inline-flex justify-center items-center bg-indigo-700 hover:bg-indigo-600 text-gray-50 rounded-full"
+       href="#top" id="backToTop">
+        <i class="fa-solid fa-angle-up text-2xl"></i>
+    </a>
+</div>
+
+<a href="https://twitter.com/Ukraine" id="ukraine" rel="nofollow" target="_blank"
+   title="We stand with Ukraine. Nós estamos com a Ucrânia"></a>
+
+<script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

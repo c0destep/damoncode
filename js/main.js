@@ -7,46 +7,48 @@ window.onload = () => {
     let hasSend = document.getElementById('hasSend');
     let hasNotSend = document.getElementById('hasNotSend');
 
-    buttonSendContact.addEventListener('click', async () => {
-        buttonSendContact.disable = true;
+    if ((formSendContact != undefined) && (buttonSendContact != undefined) && (hasSend != undefined) && (hasNotSend != undefined)) {
+        buttonSendContact.addEventListener('click', async () => {
+            buttonSendContact.disable = true;
 
-        let Data = new FormData(formSendContact);
+            let Data = new FormData(formSendContact);
 
-        let response = await fetch(formSendContact.action, {
-            method: formSendContact.method,
-            body: Data
-        });
+            let response = await fetch(formSendContact.action, {
+                method: formSendContact.method,
+                body: Data
+            });
 
-        if (response.status === 200) {
-            let result = await response.json();
+            if (response.status === 200) {
+                let result = await response.json();
 
-            buttonSendContact.disable = false;
+                buttonSendContact.disable = false;
 
-            if (result.status === 'error') {
+                if (result.status === 'error') {
+                    hasNotSend.classList.toggle('hidden', false);
+                    hasNotSend.innerText = result.message;
+
+                    setTimeout(function () {
+                        hasNotSend.classList.toggle('hidden', true);
+                    }, 5000);
+                } else {
+                    hasSend.classList.toggle('hidden', false);
+                    hasSend.innerText = result.message;
+
+                    setTimeout(function () {
+                        hasSend.classList.toggle('hidden', true);
+                        formSendContact.reset();
+                    }, 5000);
+                }
+            } else {
                 hasNotSend.classList.toggle('hidden', false);
-                hasNotSend.innerText = result.message;
+                hasNotSend.innerText = 'Lamentamos que houver um erro no envio da mensagem!!';
 
                 setTimeout(function () {
                     hasNotSend.classList.toggle('hidden', true);
                 }, 5000);
-            } else {
-                hasSend.classList.toggle('hidden', false);
-                hasSend.innerText = result.message;
-
-                setTimeout(function () {
-                    hasSend.classList.toggle('hidden', true);
-                    formSendContact.reset();
-                }, 5000);
             }
-        } else {
-            hasNotSend.classList.toggle('hidden', false);
-            hasNotSend.innerText = 'Lamentamos que houver um erro no envio da mensagem!!';
-
-            setTimeout(function () {
-                hasNotSend.classList.toggle('hidden', true);
-            }, 5000);
-        }
-    });
+        });
+    }
 }
 
 window.onscroll = () => {
