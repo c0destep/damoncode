@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Error 404</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+        @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
+
+        .error-container {
+            text-align: center;
+            font-size: 180px;
+            font-family: 'Catamaran', sans-serif;
+            font-weight: 800;
+            margin: 20px 15px;
+        }
+
+        .error-container>span {
+            display: inline-block;
+            line-height: 0.7;
+            position: relative;
+            color: #cfbad6fd;
+        }
+
+        .error-container>span {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .error-container>span:nth-of-type(1) {
+            color: #4338CA;
+            animation: colordancing 4s infinite;
+        }
+
+        .error-container>span:nth-of-type(3) {
+            color: #FF5353;
+            animation: colordancing2 4s infinite;
+        }
+
+        .error-container>span:nth-of-type(2) {
+            width: 120px;
+            height: 120px;
+            border-radius: 999px;
+        }
+
+        .error-container>span:nth-of-type(2):before,
+        .error-container>span:nth-of-type(2):after {
+            border-radius: 0%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            border-radius: 999px;
+            box-shadow: inset 30px 0 0 #eddaed70,
+                inset 0 30px 0 #c0c9faa4,
+                inset -30px 0 0 #c7bcd6ec,
+                inset 0 -30px 0 #d6bbbaa4;
+            animation: shadowsdancing 4s infinite;
+        }
+
+        .error-container>span:nth-of-type(2):before {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .screen-reader-text {
+            position: absolute;
+            top: -9999em;
+            left: -9999em;
+        }
+
+        @keyframes shadowsdancing {
+            0% {
+                box-shadow: inset 30px 0 0 rgba(207, 186, 214, 0.37),
+                    inset 0 30px 0 rgba(192, 201, 250, 0.411),
+                    inset -30px 0 0 rgba(255, 83, 83, 0.253),
+                    inset 0 -30px 0 rgba(68, 56, 202, 0.479);
+            }
+
+            25% {
+                box-shadow: inset 30px 0 0 rgba(68, 56, 202, 0.479),
+                    inset 0 30px 0 rgba(207, 186, 214, 0.37),
+                    inset -30px 0 0 rgba(192, 201, 250, 0.411),
+                    inset 0 -30px 0 rgba(255, 83, 83, 0.253);
+            }
+
+            50% {
+                box-shadow: inset 30px 0 0 rgba(255, 83, 83, 0.253),
+                    inset 0 30px 0 rgba(68, 56, 202, 0.479),
+                    inset -30px 0 0 rgba(207, 186, 214, 0.37),
+                    inset 0 -30px 0 rgba(192, 201, 250, 0.411);
+            }
+
+            75% {
+                box-shadow: inset 30px 0 0 rgba(192, 201, 250, 0.411),
+                    inset 0 30px 0 rgba(255, 83, 83, 0.253),
+                    inset -30px 0 0 rgba(68, 56, 202, 0.479),
+                    inset 0 -30px 0 rgba(207, 186, 214, 0.37);
+            }
+
+            100% {
+                box-shadow: inset 30px 0 0 rgba(255, 83, 83, 0.253),
+                    inset 0 30px 0 rgba(192, 201, 250, 0.411),
+                    inset -30px 0 0 rgba(207, 186, 214, 0.37),
+                    inset 0 -30px 0 rgba(68, 56, 202, 0.479);
+            }
+        }
+
+        @keyframes colordancing {
+            0% {
+                color: #4338CA;
+            }
+
+            25% {
+                color: #FF5353;
+            }
+
+            50% {
+                color: #cfbad6;
+            }
+
+            75% {
+                color: #C0C9FA;
+            }
+
+            100% {
+                color: #4338CA;
+            }
+        }
+
+        @keyframes colordancing2 {
+            0% {
+                color: #cfbad6;
+            }
+
+            25% {
+                color: #C0C9FA;
+            }
+
+            50% {
+                color: #4338CA;
+            }
+
+            75% {
+                color: #FF5353;
+            }
+
+            100% {
+                color: #E8D9FA;
+            }
+        }
+
+        /* demo stuff */
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #111827;
+            margin-bottom: 50px;
+        }
+
+        html,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            color: #92a4ad;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 15px;
+        }
+
+        .zoom-area {
+            max-width: 490px;
+            margin: 30px auto 30px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .link-container {
+            text-align: center;
+        }
+
+        a.more-link {
+            text-transform: uppercase;
+            font-size: 13px;
+            background-color: #92a4ad;
+            padding: 10px 15px;
+            border-radius: 0;
+            color: #416475;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            line-height: 1.5;
+            text-decoration: none;
+            margin-top: 50px;
+            letter-spacing: 1px;
+        }
+
+
+        /*Button*/
+
+        button {
+
+            background: #4338CA;
+            color: #ccc;
+            width: 200px;
+            height: 60px;
+            border: 0;
+            left: 100%;
+            top: 100%;
+            margin-left: 850px;
+            margin-top: 40px;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 0.25rem;
+            font-family: 'Raleway', sans-serif;
+            transition: .6s;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+
+<body class="bg-purple">
+
+    <h1>400 Bad Request</h1>
+    <section class="error-container">
+        <span>4</span>
+        <span><span class="screen-reader-text">0</span></span>
+        <span>0</span>
+    </section>
+
+    <button class="button404">Click Me</button>
+</body>
+
+</html>
